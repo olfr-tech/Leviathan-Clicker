@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leviathan Clicker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div>
+          <p class="tag">Hot Dog • Mustard • Clicker</p>
+          <h1>Leviathan Clicker</h1>
+          <p class="subtitle">
+            Click the leviathan dog, stock up on upgrades, and drown the world in mustard.
+          </p>
+        </div>
+        <div class="stats">
+          <div>
+            <span class="label">Mustard</span>
+            <span id="mustard-count" class="value">0</span>
+          </div>
+          <div>
+            <span class="label">Mustard per second</span>
+            <span id="mps-count" class="value">0</span>
+          </div>
+          <div>
+            <span class="label">Lifetime mustard</span>
+            <span id="lifetime-count" class="value">0</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="play-area">
+        <button id="clicker" class="clicker" type="button" aria-label="Click the leviathan hot dog">
+          <img src="hotdog.svg" alt="Leviathan hot dog" />
+          <span class="click-hint">Click for mustard!</span>
+        </button>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Upgrades</h2>
+            <button id="reset" type="button" class="reset">Reset</button>
+          </div>
+          <p class="panel-subtitle">Boost your mustard per second with these sizzling upgrades.</p>
+          <div id="upgrade-list" class="upgrade-list"></div>
+        </div>
+      </section>
+
+      <section class="legend">
+        <div>
+          <h3>How it works</h3>
+          <ul>
+            <li>Click the leviathan dog to earn mustard instantly.</li>
+            <li>Spend mustard on upgrades to raise your mustard per second (MPS).</li>
+            <li>Stack upgrades to build the ultimate hot dog empire.</li>
+          </ul>
+        </div>
+        <div class="goal">
+          <h3>Ultimate goal</h3>
+          <p>Have the most mustard you can get. Keep clicking, keep upgrading, keep spilling.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
